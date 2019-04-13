@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		#Koala{
+			/* 粗細 樣式 顏色 */
+			border:10px solid blue;
+		}
+		#Penguins{
+			border-top:10px solid blue;
+			border-right:5px dashed red;
+			border-bottom:7px dotted green;
+			border-left:3px inset purple;
+			/* 圓角 */
+			border-radius: 50%;
+			/* box-shadow 水平距離 垂直距離 模糊距離 陰影尺寸 顏色 */
+			box-shadow: 0px 0px 10px 10px red;
+			/* 透明度 0.0~1.0 */
+			opacity: 0.5;
+
+			filter:blur(2px);
+		}
+		#idea{
+			/* drop-shadow 根據png的輪廓產生陰影
+			box-shadow 水平距離 垂直距離 模糊距離 顏色 */
+			filter: drop-shadow(0px 0px 10px red);
+		}
+	</style>
+</head>
+<body>
+	<img src="Koala.jpg" alt="" width="300" id="Koala">
+	<br>
+	<img src="Penguins.jpg" alt="" id="Penguins" width="300" height="300">
+	<br>
+	<img src="./idea.png" alt="" id="idea">
+</body>
+</html>
